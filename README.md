@@ -20,9 +20,9 @@ Amazon EC2 인스턴스를 사용하여 Hadoop 클러스터를 구성하는 경�
 이러한 구성은 비용 효율성과 성능 향상을 동시에 실현할 수 있는 장점을 제공하며, 컴퓨팅 리소스와 스토리지 리소스를 효율적으로 활용할 수 있다. (TCO를 고려한 플랫폼)
 
 ### Elastic spot instance 고려
-- EC2의 유휴자원을 Availability Zone 별로 경매를 통해 이용
+- EC2(amazon Elastic Compute Cloud)의 유휴자원을 Availability Zone 별로 경매를 통해 이용
 - 빅데이터 분석, 배치작업, Stateless web, 이미지 렌더링, 대량 병렬 계산 등에서 활용
-- spot fleet : 인스턴스 가용성 유지를 위한 옵션
+- spot fleet : 인스턴스(가상 컴퓨팅 환경) 가용성 유지를 위한 옵션
 - spot block : 스팟 인스턴스를 일정 기간동안 스팟 인스턴스를 계속해서(1-6h)사용할 수 있는 옵션으로 지속적인 워크로드가 필요할 때 활용
 
 ### HDFS(Hadoop Distributed File system)로 S3(Object Storage)를 사용했을 때의 장점
@@ -32,4 +32,15 @@ Amazon EC2 인스턴스를 사용하여 Hadoop 클러스터를 구성하는 경�
 - cluster을 종료 후에 다시 cluster을 구성해도 기존 데이터를 읽을 수 있다.
 - hdfs 확장에 대해 신경을 쓰지 않아도 됨
 
+## Data Pipeline Architecture (AWS)
+1. Communication : 데이터적 요구사항 분석(Use Case)과 데이터 선정 
+2. Data 수집 (Amazon Kinesis Streams, Amazon API Gateway, Amazon Kinesis Firehouse, Lambda function)
+3. Data 전처리 및 저장 (AWS Glue, Amazon S3, Amazon EMR)
+ - S3 Data Lake :
+    batch-Processing engine : spark - aws EMR, DMS  
+    stream-Processing engine : Spark Streaming - aws kinesis Analytics
+ - Serving Data Store : Amazon ES, Amazon DynamoDB, Amazon RDS, Amazon Redshift
+ - Data Cataloging(AWS Glue) : S3에 데이터를 저장할 때 메타시스템 관리
+4. Data 시각화, 분석 (Amazon Athena, Apache Zepplin, tableau, periscope Data, Superset)
+    
 
