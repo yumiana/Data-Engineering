@@ -1,3 +1,12 @@
+# SQL
+# Python, Library(pandas, NumPy, sci-kit learn, Tensorflow, PySpark)
+# Commends line : Linux
+1. 원격 서버 작업: 데이터 엔지니어는 종종 원격 서버에서 작업합니다. 원격으로 서버에 액세스하여 파일을 이동하고 로그를 검색하고 버전을 관리하는 데 필요한 강력한 도구입니다.
+
+2. 파일 이동 및 검색: 파일을 쉽게 이동하고 검색할 수 있습니다. 이것은 ETL(Extract Transform Load) 파이프라인을 구축할 때 매우 유용합니다. 데이터 엔지니어는 종종 데이터를 추출하고 변환한 다음 로드해야 하므로, 이러한 프로세스를 간편하게 만들어줍니다.
+
+3. 개발자 생산성 향상: 명령은 자동화 및 스크립팅에 쉽게 사용할 수 있으며, 작업을 자동화하여 반복적인 작업을 줄일 수 있습니다.
+
 # Data-Engineering
 
 ## Data architecture : Data lake vs Data lakehouse vs Data Warehouse
