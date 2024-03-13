@@ -51,5 +51,16 @@ Amazon EC2 인스턴스를 사용하여 Hadoop 클러스터를 구성하는 경�
  - Serving Data Store : Amazon ES, Amazon DynamoDB, Amazon RDS, Amazon Redshift
  - Data Cataloging(AWS Glue) : S3에 데이터를 저장할 때 메타시스템 관리
 4. Data 시각화, 분석 (Amazon Athena, Apache Zepplin, tableau, periscope Data, Superset)
-    
+
+
+### 데이터 수집 파이프라인 
+1. IAM : AWS 계정에 대한 인증 및 권한 부여를 제어하는 데 필요한 인프라 제공.
+ex) EC2에서 다른 서비스를 핸들링하려면, 그 서비스를 다룰 수 있는 권한을 EC2에 주는 
+- 인증(Authentication): AWS 계정에 로그인하는 사용자의 인증
+- 권한 부여(Authorization): 사용자 및 역할에 대한 권한 설정
+- 보안 정책 관리(Security Policy Management): 보안 정책을 통한 권한 제어
+
+2. Kafka install on EC2
+- 3개의 EC2를 이용 : Producer(데이터 생성 및 전송), Kafka 서버, Consumer(Kafka Cluster에 저장되어 있는 데이터를 Consuming)
+
 
