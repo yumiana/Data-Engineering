@@ -31,7 +31,7 @@ Unit Test vs Integratiopn Test
 ## NoSQL
 
 # 03_Data Pipeline
-## ETL Process
+## ETL Process and Tools
 분석, 시각화를 위해 대규모 데이터셋을 변환하고 준비하는 기술
 ### 데이터 생성
 
@@ -40,7 +40,9 @@ Unit Test vs Integratiopn Test
 ### Transformation
 ### Load
 Amazon Redshift 데이터 웨어하우스
+
 Snowflake 데이터 웨어하우스
+
 데이터 레이크
 
 ## Batch / Stream Processing
@@ -50,7 +52,7 @@ Hive, MapReduce
 HDFS
 ### Spark
 
-## Cloud Networing and Architecture
+## Cloud Networking and Architecture
 ### AWS
 ### GCP
 
@@ -95,5 +97,6 @@ HDFS
 - [Unit Testing and Test Driven Development in Python](https://www.udemy.com/course/unit-testing-and-tdd-in-python/?ranMID=39197&ranEAID=GjbDpcHcs4w&ranSiteID=GjbDpcHcs4w-KudpdnnpEA3QyjbxvMhcRg&LSNPUBID=GjbDpcHcs4w&utm_source=aff-campaign&utm_medium=udemyads&couponCode=KEEPLEARNING)
 - [Database Systems Full University Course](https://youtu.be/4cWkVbC2bNE)
 - [IBM Data Engineering Professional Certificate](https://www.coursera.org/professional-certificates/ibm-data-engineer)
+- [AWS Certified Solutions Architect Associate](https://www.udemy.com/course/best-aws-certified-solutions-architect-associate/?couponCode=KEEPLEARNING)
 - [초보자를 위한 BigQuery(SQL) 입문](https://www.inflearn.com/course/%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B9%85%EC%BF%BC%EB%A6%AC-sql-%EC%9E%85%EB%AC%B8)
 - [Preparing for Google Cloud Certification: Cloud Data Engineer](https://www.coursera.org/professional-certificates/gcp-data-engineering)
